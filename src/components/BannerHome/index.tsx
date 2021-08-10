@@ -52,7 +52,7 @@ export default function BannerHome({ data }: BannerProps) {
                                         <div className="info_slide">
                                             <div className="title" dangerouslySetInnerHTML={{ __html: banner.title }}></div>
                                             {banner.description && <p><b>{banner.description}</b></p>}
-                                            <a href={banner.link} target="_blank">{banner.buttonLabel}</a>
+                                            <a href={banner.link} target="_blank" rel="noreferrer">{banner.buttonLabel}</a>
                                         </div>
                                     </>
                                 }
